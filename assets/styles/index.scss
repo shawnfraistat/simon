@@ -29,16 +29,17 @@ h2 {
 }
 
 footer {
-	padding: 0 20px;
-	background: green;
-	color: white; /*#02a6ff;*/
+  background: green;
+  bottom: 0;
+  color: white; /*#02a6ff;*/
+  font-family: 'Nanum Gothic', sans-serif;
 	font-size: 20px;
 	font-weight: bolder;
 	text-shadow: 1px 1px black; /*#003996;*/
 	text-transform: uppercase;
-	font-family: 'Nanum Gothic', sans-serif;
+  padding: 0 20px;
   position: absolute;
-  top: -1px;
+  width: 100vw;
 }
 
 button:focus {
