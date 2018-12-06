@@ -194,7 +194,6 @@ const playThisColor = function (x) {
 const playColorsThisTurn = function () {
 	for (var i = 0; i < thisTurnArray.length; i++) {
 		playThisColor(thisTurnArray[i])
-		console.log('thisTurnArray[i] equaled ' + thisTurnArray[i])
 	}
 }
 
@@ -213,9 +212,7 @@ const readyPlayerButtons = function () {
 // Once it's done, it calls readyPlayerButtons() so that the buttons will be responsive to player clicks and s/he can take his/her turn.
 const takeTurn = function () {
 	getColorsThisTurn()
-	console.log("Got colors")
 	setTimeout(function () { playColorsThisTurn() }, 500)
-	console.log("Played colors")
 	setTimeout(function () { readyPlayerButtons() }, (2000 + time))
 }
 
