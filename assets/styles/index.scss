@@ -1,0 +1,180 @@
+@import '~bootstrap/scss/bootstrap';
+
+header {
+	margin: 0 auto 75px auto;
+	background: red;
+	height: 150px;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+body {
+	margin: 0;
+}
+
+h1 {
+	font-size: 100px;
+	text-transform: uppercase;
+	color: yellow;
+	font-weight: bolder;
+	text-shadow: 1px 1px #8fa500;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+h2 {
+	color: white;
+	font-family: 'Kodchasan', sans-serif;
+	font-size: 70px;
+}
+
+footer {
+	padding: 0 20px;
+	background: green;
+	color: white; /*#02a6ff;*/
+	font-size: 20px;
+	font-weight: bolder;
+	text-shadow: 1px 1px black; /*#003996;*/
+	text-transform: uppercase;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+button:focus {
+	outline: 0;
+}
+
+.gameboard {
+	height: 600px;
+}
+
+.boardbackground{
+	height: 600px;
+	width: 600px;
+	background: black;
+	border-radius: 290px;
+	margin: 0 auto;
+}
+
+.colorbutton {
+	height: 250px;
+	width: 250px;
+	margin: 20px;
+	float: left;
+	position: relative;
+	left: 10px;
+	top: 5px;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: " ";
+	clear: both;
+	height: 0;
+	font-size: 0;
+}
+
+.buttonspace {
+	height: 300px;
+	width: 300px;
+	background: black;
+	position: relative;
+	left: 150px;
+	top: 150px;
+	border-radius: 150px;
+}
+
+#green {
+	background: green;
+	border-radius: 250px 0 0 0;
+}
+
+#red {
+	background: red;
+	border-radius: 0 250px 0 0;
+}
+
+#yellow {
+	background: yellow;
+	border-radius: 0 0 0 250px ;
+}
+
+#blue {
+	background: blue;
+	border-radius: 0 0 250px 0;
+}
+
+#start {
+	position: absolute;
+	left: 135px;
+	top: 220px;
+	height: 30px;
+	width: 30px;
+	background: #3aff44;
+	border-radius: 30px;
+}
+
+#simontext {
+	position: absolute;
+	top: 35px;
+	left: 30px;
+}
+
+#message {
+	min-height: 35px;
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Kodchasan', sans-serif;
+}
+
+.copyright {
+	float: left;
+}
+
+.createdby {
+	float: right;
+}
+
+@keyframes flashgreen {
+    from {background-color: green;}
+    to {background-color: white;}
+}
+
+@keyframes flashred {
+    from {background-color: red;}
+    to {background-color: white;}
+}
+
+@keyframes flashyellow {
+    from {background-color: yellow;}
+    to {background-color: white;}
+}
+
+@keyframes flashblue {
+    from {background-color: blue;}
+    to {background-color: white;}
+}
+
+#green.active {
+	animation-name: flashgreen;
+    animation-duration: 0.5s;
+    animation-iteration-count: 0;
+}
+
+#red.active {
+	animation-name: flashred;
+    animation-duration: 0.5s;
+    animation-iteration-count: 0;
+}
+
+#yellow.active {
+	animation-name: flashyellow;
+    animation-duration: 0.5s;
+    animation-iteration-count: 0;
+}
+
+#blue.active {
+	animation-name: flashblue;
+    animation-duration: 0.5s;
+    animation-iteration-count: 0;
+}
