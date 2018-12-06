@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Simon</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+
+      <link href="https://fonts.googleapis.com/css?family=Kodchasan|Nanum+Gothic" rel="stylesheet">
+
+    </head>
+    <body>
+      <audio id="greensound" src="public/sounds/green.wav" type="audio/wav"></audio>
+      <audio id="redsound" src="public/sounds/red.wav" type="audio/wav"></audio>
+      <audio id="yellowsound" src="public/sounds/yellow.wav" type="audio/wav"></audio>
+      <audio id="bluesound" src="public/sounds/blue.wav" type="audio/wav"></audio>
+      <audio id="losesound" src="public/sounds/lose.wav" type="audio/wav"></audio>
+      <audio id="continuesound" src="public/sounds/continue.wav" type="audio/wav"></audio>
+      <audio id="winsound" src="public/sounds/win.wav" type="audio/wav"></audio>
+    	<header>
+    		<h1>Simon</h1>
+    	</header>
+    	<main>
+    		<div class="gameboard">
+    			<div class="boardbackground">
+    				<div class="colorbutton" id="green"></div>
+    				<div class="colorbutton" id="red"></div>
+    				<div class="colorbutton" id="yellow"></div>
+    				<div class="colorbutton" id="blue"></div>
+    				<div class="buttonspace">
+    					<h2 id="simontext">SIMON</h2>
+    					<button id="start"></button>
+    				</div>
+    			</div>
+    		</div>
+    	</main>
+    	<div>
+    		<p id="message"></p>
+    	</div>
+    	<footer class="clearfix">
+    		<p class="copyright">Copyright 2018</p>
+    		<p class="createdby">Created by Shawn</p>
+    	</footer>
+    </body>
+  </html>
